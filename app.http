@@ -1,0 +1,32 @@
+POST http://localhost:4500/project
+Content-Type: application/json
+
+{
+    "project_name": "Build a stadium",
+    "description": "Build a capability",
+    "project_location": "Nyeri",
+    "startdate": "2023-7-24",
+    "enddate": "2023-7-29"
+}
+
+###GET ALL PROJECTS
+GET http://localhost:4500/project
+
+
+###GETTING ONE PROJECT
+GET  http://localhost:4500/project/22c097a2-afb9-4049-bca1-0f00ef3d6bf0
+
+###UPDATING A PROJECT
+PUT http://localhost:4500/project/16e9eab8-e92f-4b8a-9139-0754006c4454
+Content-Type: application/json
+
+{
+    "project_name": "Build a Hospital",
+    "description": "Build a Level 4 hospital",
+    "project_location": "Tharaka Nithi",
+    "startdate": "2023/7/24",
+    "enddate": "2025/7/30"
+}
+
+###DELETING A PROJECT
+DELETE http://localhost:4500/project/16e9eab8-e92f-4b8a-9139-0754006c4454
